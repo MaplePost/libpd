@@ -1,4 +1,4 @@
-UNAME = $(shell uname)
+78UNAME = $(shell uname)
 SOLIB_PREFIX = lib
 STATICLIB_EXT = a
 LIBPD_IMPLIB =

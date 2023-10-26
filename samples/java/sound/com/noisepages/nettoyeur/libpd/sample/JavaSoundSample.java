@@ -22,7 +22,7 @@ public class JavaSoundSample {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 		JavaSoundThread audioThread = new JavaSoundThread(44100, 2, 16);
-		int patch = PdBase.openPatch("samples/java/com/noisepages/nettoyeur/libpd/sample/test.pd");
+		int patch = PdBase.openPatch("test.pd");
 		audioThread.start();
 		Thread.sleep(5000);  // Sleep for five seconds; this is where the main application code would go in a real program.
 		audioThread.interrupt();
